@@ -45,22 +45,33 @@ let friendFavorites = [
   ];
 
 // 5. Print out only foods that have an "a" in the name. For example, "Pizza" would not be included, but "Pasta" would be.
-friendFavorites
+/* friendFavorites
   .filter(food => food.toLowerCase().includes("a"))
-  .forEach(food => console.log(food));
+  .forEach(food => console.log(food)); */
 
 
 
 // 6. Store the result in an array called foodsWithA. Print out the array.
+/* const foodsWithA = friendFavorites.filter(food => 
+  food.toLowerCase().includes("a")
+);
 
+console.log(foodsWithA);
+ */
 
 
 // 7. Create a new array longFoodNames for foods with names longer than 6 characters.
 
+/* const longFoodNames = friendFavorites.filter(food => food.length > 6);
 
+console.log(longFoodNames);
+ */
 
 // 8. Create another array shortFoodNames for foods 6 characters or shorter.
 
+const shortFoodNames = friendFavorites.filter(food => food.length < 6);
+
+console.log(longFoodNames);
 
 
 // 9. Print both arrays and compare:

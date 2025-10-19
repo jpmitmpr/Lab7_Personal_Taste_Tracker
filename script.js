@@ -4,18 +4,18 @@ const favoriteFoods = ["Pizza", "Sushi", "Tacos", "Pasta", "Burgers", "Ice Cream
 
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
-favoriteFoods.forEach(food => {
+/* favoriteFoods.forEach(food => {
   console.log(`One of my favorite foods is ${food}.`);
-});
+}); */
 
 
 // 3. Print out the rating for each food with a ranking like:
 // "My #1 favorite food is Ramen" (copy/paste for all items)
 // "My #2 favorite food is Sushi"
 // ...etc.
-favoriteFoods.forEach((food, index) => {
+/* favoriteFoods.forEach((food, index) => {
   console.log(`My #${index + 1} favorite food is ${food}.`);
-});
+}); */
 
 
 
@@ -34,8 +34,10 @@ function printFoodRecommendation(foodName) {
 
 
 // 4b. Call the function at least 3 times
-
-
+/* printFoodRecommendation("Hamburger")
+printFoodRecommendation("Sushi")
+printFoodRecommendation("Pizza")
+ */
 
 // Here's a list of 50 friends' favorite foods:
 let friendFavorites = [
@@ -43,6 +45,9 @@ let friendFavorites = [
   ];
 
 // 5. Print out only foods that have an "a" in the name. For example, "Pizza" would not be included, but "Pasta" would be.
+friendFavorites
+  .filter(food => food.toLowerCase().includes("a"))
+  .forEach(food => console.log(food));
 
 
 

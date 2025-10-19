@@ -1,18 +1,21 @@
-console.log("Hello World!");
+console.log("Jpmi");
 // 1. Create an array called favoriteFoods with at least 6 foods you love.
-
+const favoriteFoods = ["Pizza", "Sushi", "Tacos", "Pasta", "Burgers", "Ice Cream"];
 
 
 // 2. Loop through the list and print: "One of my favorite foods is ______."
-
-
-
+favoriteFoods.forEach(food => {
+  console.log(`One of my favorite foods is ${food}.`);
+});
 
 
 // 3. Print out the rating for each food with a ranking like:
 // "My #1 favorite food is Ramen" (copy/paste for all items)
 // "My #2 favorite food is Sushi"
 // ...etc.
+favoriteFoods.forEach((food, index) => {
+  console.log(`My #${index + 1} favorite food is ${food}.`);
+});
 
 
 
@@ -22,7 +25,11 @@ console.log("Hello World!");
     // "Have you ever tried ____?"
     // "I always recommend ____ to friends."
     // "Trust me — ____ is delicious."
-
+function printFoodRecommendation(foodName) {
+  console.log(`Have you ever tried ${foodName}?`);
+  console.log(`I always recommend ${foodName} to friends.`);
+  console.log(`Trust me — ${foodName} is delicious.`);
+}
 
 
 
